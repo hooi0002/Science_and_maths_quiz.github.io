@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+    <title>Science and Maths quiz App</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="header">
+        <h1> Science and Maths </h1>
+    </div>
+
+    <div class="quiz-container">
+        <div class="progress-bar-container" id="progress-bar-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+
+        <div id="question" class="question"> Question will be displayed here. Click start to begain! </div>
+        
+        <div class="option-container" id="option-container"></div>
+
+        <button id="start-btn"> Start </button>
+
+        <p id="result"></p>
+    </div>
+
+    <div id="timer" class="timer">
+        <span id="countdown"> 30 </span>
+    </div>
+    
+    <audio controls loop class="media-player">
+        <source src="Kahoot.mp3" type="audio/mpeg"
+    </audio>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

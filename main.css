@@ -1,0 +1,115 @@
+.header{
+    text-align: center;
+    color: skyblue;
+    background-color: lavender;
+    padding: 10px;
+    opacity: 0;
+    animation: SlideAndFadeIn 2s ease-in-out forwards;
+}
+
+
+@keyframes SlideAndFadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+body{
+    background: linear-gradient(to bottom, #4824b5, #24aeb5);
+    min-height: 100%;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.quiz-container{
+    max-width: 600px;
+    background-color:cornflowerblue;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/*
+margin = outer spacing
+padding = inner spacing
+*/
+
+.progress-bar-container{
+    height: 20px;
+    background-color: lightsteelblue;
+    border-radius: 15px;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: honeydew;
+    border-radius: 15px;
+    width: 50%;
+}
+
+.timer{
+    background-color: darkslateblue;
+    color: aliceblue;
+    width: 100px;
+    margin: auto;
+    text-align: center;
+    border-radius: 60%;
+    padding: 80px 60px;
+    font-size: 48px;
+    margin-top: 50px;
+    font-weight: bold;
+    font-family: 'Press start 2P',cursive;
+}
+
+.option-container {
+    margin: 20px;
+    height: fit-content;
+}
+
+.option-btn{
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    background-color: deepskyblue;
+    border: none;
+    height: 50px;
+    font-family: 'Press Start 2P', cursive;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.option-btn:hover{
+    background-color: dodgerblue;
+    color: lavenderblush;
+}
+
+.question{
+    margin: 30px;
+    font-family: 'Press Start 2P', cursive;
+    line-height: 30px;
+}
+
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-panel {
+    background-color: turquoise;
+    color: lavender;
+}
+
+.media-player {
+    margin: auto;
+    margin-top: 40px;
+    display: block;
+}
